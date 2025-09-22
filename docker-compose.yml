@@ -1,0 +1,11 @@
+services:
+  web:
+    image: kieuahn/my-tomcat-app:final-version-2025b
+    ports:
+      - "8084:8080"
+  db:
+    image: postgres:latest
+    environment:
+      POSTGRES_PASSWORD: "postgres"
+    ports:
+      - "5432:5432"
